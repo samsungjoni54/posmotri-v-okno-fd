@@ -17,6 +17,8 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
+  align-items: start;
+  padding-top: 133px;
 }
 
 h1,
@@ -50,11 +52,6 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #d9d9d9;
 }
-.page {
-  display: flex;
-  align-items: start;
-  padding-top: 133px;
-}
 
 .content {
   display: flex;
@@ -75,6 +72,7 @@ ol {
 .result__video-container {
   width: 711px;
   height: 386px;
+  position: relative;
 }
 .result__video {
   object-fit: cover;
@@ -97,12 +95,12 @@ ol {
 .content__list-container {
   height: 300px;
   overflow-y: scroll;
-}
-.content__list-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: relative;
 }
+
 .content__video-card {
   display: flex;
   justify-content: space-between;
@@ -210,6 +208,7 @@ ol {
   height: 18px;
   padding: 1px;
   border: 1px solid white;
+  cursor: pointer;
 }
 .search-form__pseudo-checkbox::after {
   content: "";
@@ -294,11 +293,4 @@ ol {
 }
 .content__card-link {
   cursor: pointer;
-}
-.search-form__pseudo-checkbox {
-  cursor: pointer;
-}
-.result__video-container,
-.content__list-container {
-  position: relative;
 }
